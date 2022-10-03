@@ -1,4 +1,3 @@
-# NCPM-pytorch-implementation
 # Non-local Patch Mixup for Unsupervised Domain Adaptation
 
 
