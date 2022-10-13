@@ -143,9 +143,8 @@ def obtain_label(loader, net, args, d=False, cls=False, data=None, normalize=Tru
         log_str = 'Accuracy = {:.2f}% -> Accuracy = {:.2f}%'.format(accuracy * 100, acc * 100)
         args.out_file.write(log_str + "    ")
         args.out_file.flush()
-    args.out_file.write('\n')
+    args.out_file.write(log_str + '\n')
     args.out_file.flush()
-    print(log_str + '\n')
     return pred_label.numpy().astype('int'), feature_normalized.numpy(), all_label.numpy()
 
 
